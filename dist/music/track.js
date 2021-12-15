@@ -80,7 +80,7 @@ var Track = /** @class */ (function () {
      * Creates an AudioResource from this Track.
      */
     Track.prototype.createAudioResource = function () {
-        var stream = ytdl(this.url, { highWaterMark: 1 << 25 /* 1024*1024*10 */, quality: 'highestaudio' });
+        var stream = ytdl(this.url, { highWaterMark: 1 << 25, quality: 'highestaudio' });
         var resource = voice_1.createAudioResource(stream, { metadata: this, inlineVolume: true });
         resource.volume.setVolume(0.5);
         resource.encoder.setBitrate(128000);

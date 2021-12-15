@@ -57,7 +57,7 @@ export class Track implements TrackData {
 	 * Creates an AudioResource from this Track.
 	 */
 	public createAudioResource()/* : Promise<AudioResource<Track>> */ {
-		const stream = ytdl(this.url, { highWaterMark: 1<<25 /* 1024*1024*10 */, quality: 'highestaudio' });
+		const stream = ytdl(this.url, { highWaterMark: 1<<25, quality: 'highestaudio' });
 			const resource = createAudioResource(stream, {  metadata: this, inlineVolume: true });
 			resource.volume.setVolume(0.5);
 			resource.encoder.setBitrate(128000);
