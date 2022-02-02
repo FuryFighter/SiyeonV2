@@ -185,7 +185,7 @@ client.on('interactionCreate', async (interaction: Interaction) => {
 		try {
 			// Erste einen song, dann rest queuen
 			if (await ytpl.validateID(url)) {
-				const playlist = await ytpl(url);
+				const playlist = await ytpl(url, { limit: 25 });
 				//console.log('YTPL Results', playlist.items);
 
 				const track = await Track.from(playlist.items[0].shortUrl, {

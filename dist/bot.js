@@ -177,7 +177,7 @@ client.on('interactionCreate', function (interaction) { return __awaiter(void 0,
                 return [4 /*yield*/, ytpl.validateID(url)];
             case 8:
                 if (!_a.sent()) return [3 /*break*/, 12];
-                return [4 /*yield*/, ytpl(url)];
+                return [4 /*yield*/, ytpl(url, { limit: 25 })];
             case 9:
                 playlist = _a.sent();
                 return [4 /*yield*/, track_1.Track.from(playlist.items[0].shortUrl, {
