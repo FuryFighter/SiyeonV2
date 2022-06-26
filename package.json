@@ -14,15 +14,15 @@
 	"author": "Amish Shah <contact@shah.gg>",
 	"license": "MIT",
 	"dependencies": {
-		"@discordjs/opus": "^0.5.0",
-		"@discordjs/voice": "^0.7.5",
-		"discord-api-types": "^0.19.0",
-		"discord.js": "^13.0.0-dev.328501b.1626912223",
-		"libsodium-wrappers": "^0.7.9",
-		"youtube-dl-exec": "^2.0.1",
-		"yt-search": "^2.10.2",
-		"ytdl-core": "^4.9.1",
-		"ytpl": "^2.2.3"
+		"@discordjs/opus": "0.5.0",
+		"@discordjs/voice": "0.7.5",
+		"discord-api-types": "0.19.0",
+		"discord.js": "13.0.0-dev.328501b.1626912223",
+		"libsodium-wrappers": "0.7.9",
+		"youtube-dl-exec": "2.0.1",
+		"yt-search": "2.10.2",
+		"ytdl-core": "4.9.1",
+		"ytpl": "2.2.3"
 	},
 	"devDependencies": {
 		"tsconfig-paths": "^3.9.0",
