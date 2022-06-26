@@ -10,6 +10,7 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 RUN apt-get update || : && apt-get install python -y
+
 RUN npm install
 RUN npm i ffmpeg-static
 # If you are building your code for production

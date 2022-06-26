@@ -6,4 +6,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    image: siyeonbot
+    network_mode: bridge
     restart: unless-stopped
